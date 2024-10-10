@@ -23,18 +23,20 @@ public class Teste {
 
         System.out.println();
         System.out.println("Resultado UCB");
+        System.out.println("Média: " + provaUCB.calcularMedia());
         if(provaUCB.aprovado()) {
-            System.out.println("Aprovado na UCB");
+            System.out.println("Aprovado");
         } else {
-            System.out.println("Reprovado na UCB. Média menor que 7");
+            System.out.println("Reprovado. Média menor que 7");
         }
 
         System.out.println();
-        System.out.println("Resultado UCB");
+        System.out.println("Resultado Fafifo");
+        System.out.println("Média: " + provaFafifo.calcularMedia());
         if(provaFafifo.aprovado()) {
-            System.out.println("Aprovado na Fafifo");
+            System.out.println("Aprovado");
         } else {
-            System.out.println("Reprovado na Fafifo. Média menor que 7");
+            System.out.println("Reprovado. Média menor que 7");
         }
     }
 }
